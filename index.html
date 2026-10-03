@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8488f6460.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src ="images/logo 4.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+             <p>Currently Pursuing B.E</p>
+             <h1>Hi, I'm<span> Pallavi</span><br>Poojary from India</h1>
+        </div>
+    </div>
+</div>
+<!--  -------------------about-------------------  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src ="images/personal-portfolio-img/images/bckground 3.jpeg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> I'm a passionate and dedicated student with a strong interest in technology and innovation.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active tab" id="skills">
+            <ul>
+                <li><span>python</span><br></li>
+                <li><span>C programming</span><br></li>
+                <li><span>HTML</span><br> website development</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2025</span><br>IDT on waste segregation management system  project</li>
+                <li><span>2025</span><br>IPBL project on smart traffic management system</li>
+                <li><span>2026</span><br>currently working on NGO related issues on college project</li>
+                <li><span>2026</span><br>currently doing tiranex internship</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023</span><br>SSLC</li>
+                <li><span>2025</span><br>Plus Two</li>
+                <li><span>2026</span><br>2 year Engineering in CSE </li>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>
+<!- -----------------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+              <i class="fas fa-code"></i>
+              <h2>Web Development</h2>
+              <p>Creating simple and responsive websites using HTML and CSS.</p>
+              <a href="#">learn more</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2> python programming</h2>
+               <p>Developing basic Python programs and solving programming problems.</p>
+               <a href="#">learn more</a>
+            </div>
+            <div>
+               <i class="fa-brands fa-discord"></i>
+               <h2>Student Project Development</h2>
+               <p>Building academic projects .</p>
+               <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------portfolio----------------- -->
+ <div id ="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/my work 1.jpeg">
+                <div class="layer">
+                    <h3>physical prototype</h3>
+                    <p> this is the side view of the prototype which seperates dry and wet waste without human intervention.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>   
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/my work 2.jpeg">
+                <div class="layer">
+                    <h3>prototype of IDT</h3>
+                    <p> this is the front view of the prototype which automates the process of separating dry and wet waste.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>   
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/my work 3.png">
+                <div class="layer">
+                    <h3>density based traffic management system</h3>
+                    </h3>
+                    <p> A system that uses density information to manage and optimize traffic flow.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>   
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+<!-- --------contact----------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>poojarypallavi17@gmail.com</p>
+            <p><i class="fa-solid fa-location-crosshairs"></i>Karnataka,india</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/personal-portfolio-img/images/my-cv.pdf" class="btn btn2">Download cv</a>
+        </div>
+        <div class="contact-right">
+            <form id="contact-form">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+ </div>
+ <div class="copyright">
+    <p>Copyright @ Pallavi by  Made with <i class="fa-solid fa-heart"></i>by easy   </p>
+ </div>
+</div>
+
+
+ <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+<script>
+    var sideMenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right ="0";
+  }
+  function openmenu(){
+        sidemenu.style.right ="-200px";
+  }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUCGyV6Fw5wKK2raXMM0prfQfqztKca7Z8Onwcjp7nBSGEizjzG6YT8v_U5Zl9A_dh/exec';
+    const form = document.getElementById("contact-form");
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
+
+
